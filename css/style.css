@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
+header, footer {
+    display: flex;
+    background-color: aqua;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 12px 6px gray;
+}
+
+img {
+    box-shadow: 0px 5px 12px 6px gray;
+    margin: 1rem;
+    
+}
+
+header h1 {
+    margin-top: 4.5rem;
+    
+}
+
+#currentdate, .date {
+    color:rgb(198, 219, 5);
+}
+
+section h1 {
+    border-bottom: 1px solid #888888;
+    text-align: left;
+    margin-left: .5rem;
+}
+
+section div {
+    text-align: left;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid #888888;
+    font-style: oblique;
+
+}
+
+.links {
+    text-align: left;
+}
+ul {
+    list-style-type: square;
+}
+
+li {
+    padding: .15rem;
+}
+footer {
+    display: block;
+
+}
+
+footer p {
+    padding-top: 1rem;
+}
+
+footer div {
+    padding-bottom: 1rem;
+    margin-top: -0.8rem;
+}
