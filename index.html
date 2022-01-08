@@ -8,23 +8,25 @@
     <link rel="icon" type="image/png" href="https://example.com/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <script src="js/currentdate.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    
     <title>Ekpenyong Etim Homepage</title>
 </head>
 <body>
     <header>
         <div class="profile-photo">
-			<img src="images/myportrait.jpg" alt="admin photo">
+			<img src="images/myportrait.jpg" alt="admin photo" width="150px">
         </div>
         <h1>Ekpenyong E. Etim</h1>
     </header>
-    <section class="heading">
+    
+    <section class="head">
         <h1>WDD 230: Assignment Portal</h1>
     </section>
 
     <section class="links">
         <nav>
-            <ol>
+            <ul>
               <li>Lesson 02:<a href="" target="blank">Title</a></li>
               <li>Lesson 03:<a href="" target="blank">Title</a></li>
               <li>Lesson 04:<a href="" target="blank">Title</a></li>
@@ -35,7 +37,7 @@
               <li>Lesson 09:<a href="" target="blank">Title</a></li>
               <li>Lesson 10:<a href="" target="blank">Title</a></li>
               <li>Lesson 11:<a href="" target="blank">Title</a></li>
-            </ol>
+            </ul>
         </nav>
     </section>
 
@@ -45,9 +47,9 @@
 
     <footer>
         <p>&copy;2021 | Ekpenyong E. Etim | Utah</p>
-        <div>Last Updated: <span id="currentdate"></span><span id="currenttime"></span></div>
+        <div class="date">Last Updated: <span id="currentdate"></span><span id="currenttime"></span></div>
     </footer>
-   
+    <script src="js/currentdate.js"></script>
 
 </body>
 </html>
