@@ -9,5 +9,11 @@
     header, footer {
         display: flex;
         border-radius: 10px 10px 10px 10px;
+        box-shadow: 0px 5px 12px 6px gray;
+    }
+
+    header h1 {
+        margin-top: 4.5rem;
+        
     }
 }
