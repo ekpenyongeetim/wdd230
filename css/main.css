@@ -29,7 +29,7 @@ header h1 {
     color:rgb(219, 5, 5);
 }
 
-section h1 {
+section h2 {
     font-family: 'Andada Pro', serif;
     border-bottom: 1px solid #888888;
     text-align: left;
@@ -41,7 +41,6 @@ p {
     text-align: left;
     padding: .5rem;
     margin-bottom: 1rem;
-    border-top: 1px solid #888888;
     font-style: oblique;
 
 }
