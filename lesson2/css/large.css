@@ -1,5 +1,6 @@
 @media only screen and (max-width: 37.5em) {
     main {
+        text-align: center;
         grid-template-columns: 1fr;
     }
     .jumia {
@@ -11,4 +12,5 @@
     .coke {
         grid-column: 1 / 2;
     }
+
 }

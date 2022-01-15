@@ -1,5 +1,6 @@
 @media only screen and (max-width: 32.5em) {
     main {
+        font-size: .8rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -14,7 +15,4 @@
         grid-row: 2;
     }
 
-    main {
-        font-size: .8rem;
-    }
 }
