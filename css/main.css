@@ -10,7 +10,6 @@ body {
 header, footer {
     display: flex;
     background-color: aqua;
-    border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 5px 12px 6px gray;
 }
 
