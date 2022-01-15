@@ -1,0 +1,14 @@
+@media only screen and (max-width: 37.5em) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .jumia {
+        grid-column: 1 / 2;
+    }
+    .boomplay {
+        grid-column: 1 / 2;
+    }
+    .coke {
+        grid-column: 1 / 2;
+    }
+}
