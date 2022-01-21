@@ -1,18 +1,18 @@
-@media only screen and (max-width: 32.5em) {
+@media only screen and (min-width: 37.5em) {
     main {
-        font-size: .8rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;      
     }
-    .jumia {
-        grid-column: 1 / 2;
+    
+    section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+    p {
+        font-size: 1.2rem;
     }
-    .boomplay {
-        grid-column: 2 / 3;
-    }
-    .coke {
-        grid-column: 1 / span 2;
-        grid-row: 2;
+
+    h1 {
+        font-size: 1.9rem;
     }
 
 }

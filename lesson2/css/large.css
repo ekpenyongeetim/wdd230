@@ -1,16 +1,27 @@
-@media only screen and (max-width: 37.5em) {
+@media only screen and (min-width: 60em) {
     main {
-        text-align: center;
-        grid-template-columns: 1fr;
-    }
-    .jumia {
-        grid-column: 1 / 2;
-    }
-    .boomplay {
-        grid-column: 1 / 2;
-    }
-    .coke {
-        grid-column: 1 / 2;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 1rem;
     }
 
+    p {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size:2.2rem;
+    }
+
+    header h3 {
+     padding: 1rem;
+    }
+
+    div {
+        padding: .5rem;
+        font-size: 1.2rem;
+    }
+
+    section:nth-child(3) {
+		grid-column: span 1;
+	}
 }
