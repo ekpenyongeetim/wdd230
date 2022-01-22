@@ -1,6 +1,6 @@
 @media only screen and (min-width: 37.5em) {
     main {
-        grid-template-columns: 1fr 1fr;      
+        grid-template-columns: 1fr 1fr;   
     }
     
     section:nth-child(3) {
@@ -14,5 +14,10 @@
     h1 {
         font-size: 1.9rem;
     }
+
+    section {
+        min-width: 300px;
+    }
+    
 
 }
