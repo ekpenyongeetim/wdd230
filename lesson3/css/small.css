@@ -104,7 +104,6 @@ main p {
 .grid-container {
     display: grid;
     grid-gap: 3px;
-    grid-template-columns: auto auto auto;
     padding: 10px;
   }
 .color {
@@ -123,16 +122,6 @@ main p {
 }
 .color-palete3 {
     background-color: #CCC9E7;
-}
-
-.color-container  {
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
 }
 
 footer {
