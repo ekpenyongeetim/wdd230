@@ -1,8 +1,37 @@
 @media only screen and (min-width: 37.5em) {
-    header {;
+    body {
+        font-size: 1.1rem;
+    }
+    header {
         display: grid;
-        grid-template-columns: 250px auto 1fr;
+        grid-template-columns: 150px auto 250px;
                 
     }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+    .socials {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1 1 auto;
+    }
+    nav a {
+        border: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
     
+    .color-palete3 {
+		grid-column: span 2;
+	}
+
 }

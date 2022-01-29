@@ -4,12 +4,11 @@ body {
     margin: 0 auto;    
 }
 
-header {;
+header {
     display: block;
     max-width: 100%;
     color: #19297C;
     padding: .2rem;
-    border-radius: 12px 12px 0px 0px;
     text-align: center;
     
 }
@@ -64,7 +63,7 @@ img {
     padding: 1rem;
 }
 
-.button {
+div a {
     background-color: #19297C;
     border: none;
     color: white;
@@ -76,20 +75,13 @@ img {
     margin: 4px 2px;
     cursor: pointer;
     transition-duration: 0.5s;
+    border-radius: 5.5rem;
   }
-  
-.button1 {
-    border-radius: 10rem;  
-}
 
 .button:hover {
     background-color: #07A0C3;
     color: white;
   }
-
-.button2 {
-    border-radius: 5.5rem;
-}
 
 main{
     text-align: left;
@@ -105,12 +97,13 @@ main p {
     display: grid;
     grid-gap: 3px;
     padding: 10px;
+    font-weight: bold;
   }
 .color {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 30px;
+    font-size: 1rem;
     text-align: center;
   }
 
