@@ -40,13 +40,13 @@ nav ul {
     padding: 0px;
 
 }
-nav a:hover{
-    background-color: #19297C;
-}
 
-a:active {
+nav ul li a:active {
     background-color: #CCC9E7;
     text-decoration: underline;
+}
+li a:hover{
+    background-color: #19297C;
 }
 
 header img {
