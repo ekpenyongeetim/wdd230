@@ -55,7 +55,9 @@ aside {
 img {
     width: 100%;
 }
-
+main {
+    grid-template-columns: 1fr;
+}
 footer {
     text-align: center;
     color: white;
