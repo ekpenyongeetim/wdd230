@@ -6,7 +6,6 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 100%;
     color: white;
     background-color: #071b6d;
     text-align: center;
@@ -29,20 +28,19 @@ header h2{
     border-radius: 12rem;
     width: 2rem;
     grid-column: 4/5;
-    margin: 2rem 0 0 2rem;
+    margin: 1rem 0 0 1rem;
 }
-.socials {
-    display: flex;
-}
+
 .heading {
     grid-column: 2/4;
     text-align: left;
 }
 nav {
-    grid-column: 5;
+    grid-column: 1/5;
     grid-row: 2;
+
  }
-aside {
+date {
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 1.5rem;
@@ -60,6 +58,7 @@ main {
     grid-template-columns: 1fr;
     grid-gap: .5rem;
     text-align: left;
+    max-width: 100%;
 }
 
 main div {
@@ -67,8 +66,9 @@ main div {
     border: 1px solid rgba(0,0,0,0.3);
     background-color: #ccc;
 }
-main h2 {
+main div h2 {
     text-align: left;
+    
 }
 footer {
     text-align: center;
@@ -89,7 +89,7 @@ footer div {
 }
 
 nav button {
-    margin: .2rem 2vw;
+    margin-left: 90%;
     background: transparent;
     border: none;
     font-size: 2rem;
@@ -106,8 +106,8 @@ nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #333;
-    border-top: 1px solid rgba(0,0,0,0.5);
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 nav ul li.active a {
