@@ -1,33 +1,5 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 60em) {
-    body {
-        font-size: 1.2rem;
-    }
-	h1 {
-		font-size: 2rem;
-        margin-top: 3.5rem;
-	}
-    h2 {
-        font-size: 1.8rem;
-    }
+    
 
-    div a {
-        font-size: 1.2rem;
-        margin-top: 2.9rem;
-    }
-    .grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .color-palete3 {
-		grid-column: span 1;
-	}
-
-    picture img {
-        max-width: 20rem;
-    }
-    header img {
-        margin-top: 2rem;
-        width: 8rem;
-    }
 }

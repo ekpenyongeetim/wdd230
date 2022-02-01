@@ -59,23 +59,22 @@ img {
 }
 
 .socials {
-    text-align: center;
-    padding: 1rem;
+    padding: 3rem;
 }
 
-div a {
+.button {
     background-color: #19297C;
     border: none;
     color: white;
-    padding: 11px;
+    padding: .5rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
+    display: flex;
+    align-items: center;
+    margin: .3rem;
     cursor: pointer;
     transition-duration: 0.5s;
-    border-radius: 5.5rem;
+    border-radius: .8rem;
   }
 
 .button:hover {
