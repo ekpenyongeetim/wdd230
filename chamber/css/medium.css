@@ -1,4 +1,46 @@
 @media only screen and (min-width: 37.5em) {
+    header {
+        grid-template-columns: 130px 1fr 200px;
+    }
     
+    h1 {
+        font-size: 2.2rem;
+        
+    }
+    header h2 {
+        font-size: 1.8rem;
+    }
+    .socials {
+        display: flex;
+        right: 1.6rem;
+    }
+    .socials img {
+        margin: 1rem;
+    }
+    nav {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+    date {
+        grid-column: span 3;
+        grid-row: 3;
+    }
+    main {
+        margin: 0 auto;
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: .5rem;
+    }
+    .hero, .spotlightContainer, .join, .release {
+        grid-column: span 2;
+    }
+    .spotlightContainer {
+        display: flex;
+        grid-row: 3;
+    }
 
+    .event, .weather {
+        grid-row: 5;
+    }
 }

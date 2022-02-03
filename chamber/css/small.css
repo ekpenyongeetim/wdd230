@@ -24,12 +24,12 @@ header img {
     display: inline-block;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 h1, h2 {
     text-align: left;
 }
-h2 {
+header h2 {
     margin-top: -1.3rem;
     font-size: 1.1rem;
 }
@@ -38,10 +38,10 @@ nav button {
     margin: .2rem 2vw;
     align-items: right;
     background: transparent;
-    border: none;
+    border: 1px solid rgba(255,255,255,0.3);
     font-size: 2rem;
     color: white;
-    margin-left: 85%;
+    margin-left: 83%;
 }
 nav {
     background-color: #071b6d;
@@ -96,8 +96,38 @@ nav ul.open {display: block;}
     padding: .2rem;
     border-radius: 1.6rem;
 }
+
+date {
+	margin: 0.5rem;
+	border: 1px solid rgba(255,255,255,0.3);
+	padding: 0.75rem;
+	background-color: rgba(144,52,232,0.4);
+    grid-column: span 2;
+}
+main {
+    display: block;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr;
+    
+}
+
+main div {
+    padding: 5rem;
+    border: 1px solid rgba(0,0,0,0.3);
+    background-color: #ccc;
+    font-size: .8rem;
+}
+
+article p {
+    margin-top: -.6rem;
+}
+
 footer img {
     width: 30vw;
+}
+
+footer section {
+    padding: 1rem;
 }
 
 footer {

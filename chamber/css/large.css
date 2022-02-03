@@ -1,5 +1,12 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 60em) {
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+    header {
+        grid-template-columns: 150px 200px auto 20px;
+    }
     
 
 }
