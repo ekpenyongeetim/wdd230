@@ -25,6 +25,7 @@ header img {
 }
 h1 {
     font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
 }
 h1, h2 {
     text-align: left;
@@ -32,6 +33,7 @@ h1, h2 {
 header h2 {
     margin-top: -1.3rem;
     font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
 }
 
 nav button {
@@ -117,6 +119,9 @@ main div {
     background-color: #ccc;
     font-size: .8rem;
 }
+.spotlightContainer{
+    padding: 1rem;
+}
 
 article p {
     margin-top: -.6rem;
@@ -127,6 +132,7 @@ footer img {
 }
 
 footer section {
+    border-top: 2px solid rgba(255,255,255,0.3);
     padding: 1rem;
 }
 

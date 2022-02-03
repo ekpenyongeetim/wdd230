@@ -13,9 +13,11 @@
     .socials {
         display: flex;
         right: 1.6rem;
+        top: 3.5rem;
     }
-    .socials img {
+    .socials  a img {
         margin: 1rem;
+        border-radius: 10rem;
     }
     nav {
         grid-column: span 3;
@@ -29,18 +31,44 @@
         margin: 0 auto;
         display: grid;
         grid-gap: .5rem;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding-bottom: .5rem;
+        font-size: 1.4rem;
     }
     .hero, .spotlightContainer, .join, .release {
-        grid-column: span 2;
+        grid-column: span 3;
     }
-    .spotlightContainer {
+    .spotlightContainer{
         display: flex;
         grid-row: 3;
     }
-
+    .spotlightContainer div {
+        height: 4rem;
+    }
     .event, .weather {
         grid-row: 5;
+    }
+    .event {
+        grid-column: span 2;
+    }
+    footer {
+        font-size: 1.4rem;
+        display: grid;
+        grid-template-columns: 150px 1fr 1fr;
+    }
+    footer article:nth-child(2) {
+        text-align: left;
+        margin: 1rem 0 0 2rem;
+    }
+
+    footer img {
+        width: 12rem; 
+    }
+    footer article:nth-child(3) {
+        margin-top: 3rem;
+    }
+    footer section {
+        grid-column: span 3;
+        display: block;
     }
 }
