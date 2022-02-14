@@ -9,7 +9,7 @@
   <meta name="author" content="Ekpenyong Etim">
   <meta name="description"
     content="Chamber of commerce site is a resource for reference when looking for hotel accomodations, Tourist sites and bookings." />
-  <link rel="shortcut icon" href="favicon2.ico">
+  <link rel="shortcut icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet" />
   <link href="css/small.css" rel="stylesheet" />
   <link href="css/medium.css" rel="stylesheet" />
@@ -44,19 +44,55 @@
 
   <main>
     <div class="hero">
-      <h2>Hero with call to action</h2>
+      <picture>
+        <img class="heroBackground" src="images/pexels-hotelroom1.jpg" alt="Hotel room">
+      </picture>
+      <h2>Welcome to Southern Nigeria</h2>
+      <button>Join the chamber</button>
     </div>
     <div class="event">
-      <h2>Event</h2>
+      <h2>Upcoming Events</h2>
+      <p> 🤝🏼 Meet and greet on April, 14th</p>
     </div>
     <div class="weather">
       <h2>Weather</h2>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/4d988d34/calabar/" data-label_1="CALABAR"
+        data-label_2="WEATHER" data-icons="Climacons Animated" data-days="3" data-theme="weather_one">CALABAR
+        WEATHER</a>
+      <script>
+        ! function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://weatherwidget.io/js/widget.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'weatherwidget-io-js');
+      </script>
     </div>
     <div class="release">
       <h2>New Release</h2>
+      <ul>
+        <li>
+          Southern Chambers of Commerce open house holds next month
+           12th March, in Lagos, Nigeria.[<a href="#">Read More</a>]
+        </li>
+        <li>
+          New member registration is ongoing.
+          [<a href="#">Read More</a>]
+        </li>
+        <li>
+          <strong>1000 member</strong> milestone exceeded in just 3 months.
+          [<a href="#">Read More</a>]
+        </li>
+      </ul>
     </div>
     <div class="join">
-      <h2>Join</h2>
+      <h2>Join the chamber</h2>
+      <p>Discover how to join the Southern Chamber of Commerce and how it will
+        benefit your organization.
+      </p>
     </div>
     <div class="spotlightContainer">
       <div class="spotl1">
