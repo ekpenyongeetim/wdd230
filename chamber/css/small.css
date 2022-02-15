@@ -16,6 +16,7 @@ header {
     display: grid;
     grid-template-columns: 100px auto;
     margin-bottom: .5rem;
+    position: relative;
 }
 
 header img {
@@ -90,6 +91,39 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
+main {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1200px;
+}
+
+main div {
+    padding: 5rem;
+    border: 1px solid rgba(0,0,0,0.3);
+    background-color: #ccc;
+    font-size: 1.2rem;
+}
+
+#banner {
+    font-size: smaller;
+    background-color: aqua;
+    grid-column: span 4;
+    padding: .2rem;
+    border-radius: .5rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: .2rem;
+    left: 10vw;
+    z-index: 1;
+}
+
+#banner button {
+    padding: .5rem;
+
+}
 .socials a img {
     width: 7vw;
 
@@ -107,26 +141,14 @@ nav ul.open {display: block;}
     border-radius: 1.6rem;
 }
 
-date {
+#date {
 	margin: 0.5rem;
 	border: 1px solid rgba(255,255,255,0.3);
 	padding: 0.75rem;
 	background-color: rgba(144,52,232,0.4);
-    grid-column: span 2;
-}
-main {
-    display: grid;
-    grid-gap: .5rem;
-    grid-template-columns: 1fr;
-    width: 100%;
+    grid-column: span 4;
 }
 
-main div {
-    padding: 5rem;
-    border: 1px solid rgba(0,0,0,0.3);
-    background-color: #ccc;
-    font-size: 1.2rem;
-}
 .hero img {
     width: 100%;
     display: none;
@@ -162,14 +184,22 @@ main div {
     border-radius: 1.2rem;
 }
 
-button:hover {
+main button:hover {
     color: orangered;
     background-color: white;
 }
 .spotlightContainer{
-    padding: 1rem;
+    padding: .2rem;
     display: flex;
     flex-direction: column;
+    grid-gap: .3rem;
+}
+.spotl1, .spotl2, .spotl3 {
+    padding: 0;
+}
+
+.spotl1 img, .spotl2 img {
+    width: 100%;
 }
 .weather {
     padding: 0;

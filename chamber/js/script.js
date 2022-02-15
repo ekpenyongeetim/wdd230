@@ -1,5 +1,5 @@
 /* code for date in header*/
-const datefield = document.querySelector("date");
+const datefield = document.querySelector("#date");
 const datefieldUK = document.querySelector("aside"); 
 
 
@@ -23,5 +23,6 @@ function toggleMenu() {
  const x = document.getElementById("hamburgerBtn")
  x.onclick = toggleMenu;
 
-
+ /* code for popup banner*/
+ 
 

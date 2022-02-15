@@ -71,6 +71,9 @@
         flex-direction: column;
         align-items: stretch;
     }
+    .spotlightContainer {
+        display: block;
+      }
 
     .join{
         grid-column: 1/2;
