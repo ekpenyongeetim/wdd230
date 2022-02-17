@@ -19,7 +19,7 @@ header {
     position: relative;
 }
 
-header img {
+header figure img {
     width: 100%;
 }
 .heading {
@@ -124,6 +124,9 @@ main div {
     padding: .5rem;
 
 }
+#banner span {
+    cursor: pointer;
+}
 .socials a img {
     width: 7vw;
 
@@ -151,13 +154,10 @@ main div {
 
 .hero img {
     width: 100%;
-    display: none;
 }
 
 .hero {
-    background-image: url("/images/pexels-hotel1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 0;
     position: relative;
 }
 .hero h2 {
@@ -204,11 +204,19 @@ main button:hover {
 .weather {
     padding: 0;
     position: relative;
-}
-
-.weather a {
+    width: 100%;
     align-items: center;
-    box-shadow: 4px 4px 8px gray;
+}
+.weather figure {
+    display: flex;
+}
+.weather figure p{
+    font-size: larger;
+    margin-top: 3rem;
+}
+.weather img {
+    width: 50%;
+    margin: 2;
 }
 .event {
     padding: 0;
@@ -251,3 +259,11 @@ footer section {
 footer {
     font-size: .9rem;
 }
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

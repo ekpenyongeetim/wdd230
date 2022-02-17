@@ -18,7 +18,10 @@
 
 <body>
   <header>
-    <img src="images/logo.png" alt="company logo" />
+    <figure class="logo">
+      <img src="images/logo0.png" alt="logo" srcset="images/logo0.png 1x, images/logo1.png
+       2x, images/logo.png 3x">
+    </figure>
     <div class="heading">
       <h1>Southern</h1>
       <h2>Chamber of Commerce</h2>
@@ -41,15 +44,17 @@
 
     <div id="date"></div>
   </header>
-  
+
   <main>
     <div id="banner">
       🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
       <button><a href="#">Come join us</a></button> <span>❌</span>
     </div>
     <div class="hero">
-      <picture>
-        <img class="heroBackground" src="images/pexels-hotelroom1.jpg" alt="Hotel room">
+      <picture class="myphoto">
+        <source media="(max-width: 450px)" srcset="images/herosmall.webp">
+        <source media="(max-width: 700px)" srcset="images/heromedium.webp">
+        <img src="images/herolarge.webp" alt="church">
       </picture>
       <h2>Welcome to Southern Nigeria</h2>
       <button>Join the chamber</button>
@@ -60,20 +65,10 @@
     </div>
     <div class="weather">
       <h2>Weather</h2>
-      <a class="weatherwidget-io" href="https://forecast7.com/en/4d988d34/calabar/" data-label_1="CALABAR"
-        data-label_2="WEATHER" data-icons="Climacons Animated" data-days="3" data-theme="weather_one">CALABAR
-        WEATHER</a>
-      <script>
-        ! function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://weatherwidget.io/js/widget.min.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        }(document, 'script', 'weatherwidget-io-js');
-      </script>
+      <figure>
+        <img src="images/icon logo.png" alt="weather logo">
+        <p><strong>33°C</strong> Partly Cloudy</p>
+      </figure>
     </div>
     <div class="release">
       <h2>New Release</h2>
@@ -100,14 +95,18 @@
     </div>
     <div class="spotlightContainer">
       <div class="spotl1">
+        <picture>
         <h2>Luxury Accomodations</h2>
-        <img src="images\swimming-poolview.jpg" alt="pool view" />
+        <img src="images/poolviewlarge.jpg" alt="pool view" />
         <p>We bring the world's finest closer to you.</p>
+      </picture>
       </div>
       <div class="spotl2">
+        <picture>
         <h2>Top Hottest Destinations</h2>
-        <img src="images\pexels-scenery1.jpg" alt="scenery picture" />
+        <img src="images/sand scenerylarge.webp" alt="scenery picture" />
         <p>We bring the world's finest closer to you.</p>
+      </picture>
       </div>
       <div class="spotl3">
         <h2>Affordable</h2>
@@ -119,7 +118,10 @@
   </main>
 
   <footer>
-    <img src="images/logo.png" alt="company logo" />
+    <figure class="logo">
+      <img src="images/logo0.png" alt="logo" srcset="images/logo0.png 1x, images/logo1.png
+       2x, images/logo.png 3x">
+    </figure>
     <article>
       <h3>Southern Chamer of Commerce</h3>
       <p>111 Murtala Mohammed Road, Southern Nigeria</p>
