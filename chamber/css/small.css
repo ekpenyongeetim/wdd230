@@ -246,6 +246,10 @@ p {
     border-radius: 1.2rem;
     text-align: center;
 }
+.join h2:hover {
+    color: orangered;
+    background-color: white;
+}
 article p {
     margin-top: -.6rem;
 }
