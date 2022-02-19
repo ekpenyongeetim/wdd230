@@ -2,29 +2,26 @@
 @media only screen and (min-width: 60em) {
     header h1 {
         font-size: 2.9rem;
-        margin-top: 3rem;
     }
 
     header h2 {
         font-size: 1.9rem;
     }
-
-    header {
-        grid-template-columns: 180px 1fr 1fr 1fr;
+    .header, .footer {
+        max-width: 1300px;
+        position: relative;
     }
-
-    nav {
-        grid-column: 3;
-        grid-row: 1;
-        margin: 4rem 0 0 5rem;
+    .headings {
+        padding-left: 1rem;
     }
-    
     nav button {display: none;}
 
     nav ul#primaryNav {
         font-size: 1.6rem;
         display: flex;
-        margin-left: 2vw;
+        position: absolute;
+        top: 1rem;
+        right: 20rem;
         border-left: 1px solid rgba(255,255,255,0.3);
     }
 
@@ -33,14 +30,15 @@
         border-right: 1px solid rgba(255,255,255,0.3);
     }
 
-    .socials  a img {
-        margin: .5rem;
-        width: 3rem;
+    .socials  {
+        position: absolute;
+        right: 1rem;
     }
-    date {
-        grid-column: span 4;
-        font-size: 1.5rem;
-    }
+    #date {
+        width: 26rem;
+        font-size: 1.3rem;
+        border-radius: 9px 0 9px 0;
+      }
     main {
         grid-template-columns: 1fr 50% 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -83,5 +81,12 @@
         display: flex;
         align-items: center;
     justify-content: center;
+      }
+      .footer {
+        padding: 0;
+      }
+
+      footer section {
+          padding-right: 3rem;
       }
 }
