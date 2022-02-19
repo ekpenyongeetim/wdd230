@@ -1,31 +1,20 @@
 @media only screen and (min-width: 37.5em) {
-  header {
-    grid-template-columns: 130px 1fr 200px;
-  }
-
   h1 {
     font-size: 2.2rem;
   }
-  header h2 {
-    font-size: 1.8rem;
+
+  .logo img {
+    width: 100%;
   }
-  .socials {
-    display: flex;
-    right: 1.6rem;
-    top: 3.5rem;
+
+  .headings div {
+    font-size: 1.3rem;
   }
-  .socials a img {
-    margin: 1rem;
-    border-radius: 10rem;
+  #date {
+    width: 16rem;
+    font-size: 1rem;
   }
-  nav {
-    grid-column: span 3;
-    grid-row: 2;
-  }
-  date {
-    grid-column: span 3;
-    grid-row: 3;
-  }
+
   main {
     margin: 0 auto;
     display: grid;
@@ -34,12 +23,14 @@
     padding-bottom: 0.5rem;
     font-size: 1.4rem;
   }
+
   .hero,
   .spotlightContainer,
   .join,
   .release {
     grid-column: span 3;
   }
+
   .spotlightContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,32 +38,43 @@
 
   .spotl3 {
     grid-column: span 2;
-}
+  }
+
   .event,
   .weather {
     grid-row: 5;
   }
+
   .event {
     grid-column: span 2;
   }
+
   footer {
     font-size: 1.4rem;
-    display: grid;
-    grid-template-columns: 150px 1fr 1fr;
   }
-  footer article:nth-child(2) {
-    text-align: left;
-    margin: 1rem 0 0 2rem;
+
+  .footer {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
   }
 
   footer img {
-    width: 12rem;
+    width: 10rem;
+    height: auto;
   }
-  footer article:nth-child(3) {
-    margin-top: 3rem;
+
+  footer h3, .footerheading p {
+    margin: 0;
+    text-align: left;
+  }
+
+  .footerlctn p {
+    margin: 0;
   }
   footer section {
-    grid-column: span 3;
     display: block;
   }
 }
