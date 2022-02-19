@@ -10,6 +10,7 @@
   <meta name="description"
     content="Chamber of commerce site is a resource for reference when looking for hotel accomodations, Tourist sites and bookings." />
   <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet" />
   <link href="css/small.css" rel="stylesheet" />
   <link href="css/medium.css" rel="stylesheet" />
@@ -18,39 +19,47 @@
 
 <body>
   <header>
-    <figure class="logo">
-      <img src="images/logo0.png" alt="logo" srcset="images/logo0.png 1x, images/logo1.png
+    <div class="banner">
+      <div class="bannercontent">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!</p>
+        <button class="bannerclose" type="button">
+          <span class="material-icons">
+            close
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="header">
+      <picture class="logo">
+        <img src="images/logo0.png" alt="logo" srcset="images/logo0.png 1x, images/logo1.png
        2x, images/logo.png 3x">
-    </figure>
-    <div class="heading">
-      <h1>Southern</h1>
-      <h2>Chamber of Commerce</h2>
+      </picture>
+      <section class="headings">
+        <h1>Southern</h1>
+        <div>Chamber of Commerce</div>
+      </section>
+
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
+          <li><a href="#" class="active">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="socials">
+        <a href="#" class="button1"><img src="images/faceb.png" alt="Facebook logo" /></a>
+        <a href="#" class="button2"><img src="images/instagram1.jpg" alt="Instagram logo" /></a>
+      </div>
+
+      <div id="date"></div>
     </div>
-
-    <nav>
-      <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
-      <ul id="primaryNav">
-        <li><a href="#" class="active">Discover</a></li>
-        <li><a href="#">Directory</a></li>
-        <li><a href="#">join</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="socials">
-      <a href="#" class="button1"><img src="images/faceb.png" alt="Facebook logo" /></a>
-      <a href="#" class="button2"><img src="images/instagram1.jpg" alt="Instagram logo" /></a>
-    </div>
-
-    <div id="date"></div>
   </header>
 
   <main>
-    <div id="banner">
-      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."
-      <button><a href="#">Come join us</a></button> <span>❌</span>
-    </div>
-    <div class="hero">
+     <div class="hero">
       <picture class="myphoto">
         <source media="(max-width: 450px)" srcset="images/herosmall.webp">
         <source media="(max-width: 700px)" srcset="images/heromedium.webp">
@@ -69,9 +78,9 @@
         <img src="images/weather logo2.webp" alt="weather logo">
         <p>Temp: <strong><span id="temp">33</span>&#8451;</strong></p>
       </figure>
-        <p>Wind: <strong><span id="wind">220</span>Mph</strong> </p>
-        <span id="output"></span>         
-      
+      <p>Wind: <strong><span id="wind">220</span>Mph</strong> </p>
+      <span id="output"></span>
+
     </div>
     <div class="release">
       <h2>New Release</h2>
@@ -99,17 +108,17 @@
     <div class="spotlightContainer">
       <div class="spotl1">
         <picture>
-        <h2>Luxury Accomodations</h2>
-        <img src="images/poolviewlarge.jpg" alt="pool view" />
-        <p>We bring the world's finest closer to you.</p>
-      </picture>
+          <h2>Luxury Accomodations</h2>
+          <img src="images/poolviewlarge.jpg" alt="pool view" />
+          <p>We bring the world's finest closer to you.</p>
+        </picture>
       </div>
       <div class="spotl2">
         <picture>
-        <h2>Top Hottest Destinations</h2>
-        <img src="images/sand scenerylarge.webp" alt="scenery picture" />
-        <p>We bring the world's finest closer to you.</p>
-      </picture>
+          <h2>Top Hottest Destinations</h2>
+          <img src="images/sand scenerylarge.webp" alt="scenery picture" />
+          <p>We bring the world's finest closer to you.</p>
+        </picture>
       </div>
       <div class="spotl3">
         <h2>Affordable</h2>
@@ -138,9 +147,9 @@
     <section>
       <div>
         &copy;<span id="year">year</span> chamber | Ekpenyong E. Etim | WDD
-        230 Project |
+        230 Project
       </div>
-      <div class="date">Last Updated: <span id="modify"></span></div>
+      <div class="date">Last Updated: <span id="lastModified"></span></div>
     </section>
   </footer>
   <script src="js/script.js" defer></script>
