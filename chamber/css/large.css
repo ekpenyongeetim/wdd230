@@ -7,8 +7,13 @@
     header h2 {
         font-size: 1.9rem;
     }
-    .header, .footer {
-        max-width: 1300px;
+    .footer {
+        max-width: 1000px;
+        position: relative;
+    }
+
+    .header {
+        max-width: 1250px;
         position: relative;
     }
     .headings {
