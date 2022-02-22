@@ -15,3 +15,10 @@ picture img {
     width: 100%;
     height: auto;
 }
+picture img[data-src] {
+    filter: blur(0.1em);
+}
+picture img{
+    filter: none;
+    transition: filter 1s;
+}
