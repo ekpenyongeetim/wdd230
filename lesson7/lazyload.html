@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Progressive Loading image</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 viewport-fit=cover"
+    />
+    <meta name="author" content="Ekpenyong Etim" />
+    <meta
+      name="description"
+      content="Progressive loading image site to practice the application of lazy loading on imges using CSS and Javascript."
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Lazy Loading Images</h1>
+
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="images/highwaypic.webp"
+          alt="picture of highway"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="images/skypic.webp"
+          alt="picture of sky"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="images/redpetalspic.webp"
+          alt="red petals image"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="images/grainspic.webp"
+          alt="picture of grain in the evening"
+        />
+      </picture>
+      <picture>
+        <img
+          src="images/placeholder.png"
+          data-src="images\unslashimg.jpg"
+          alt="broke chani and flying birds photo"
+        />
+      </picture>
+    </main>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
