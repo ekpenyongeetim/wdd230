@@ -1,8 +1,8 @@
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
-    threshold: 3,
-    rootMargin: '0px 0px -00px 0px'
+    threshold: 2,
+    rootMargin: '0px 0px 100px 0px'
 }
 
 const loadImages = (img) => {
@@ -31,3 +31,22 @@ if ('IntersectionObserver' in window) {
     });
 }
 
+/* intercection observer will only load images once the user scrolls tpo it
+if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if(item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    });
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+  } else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+  }
+  */
