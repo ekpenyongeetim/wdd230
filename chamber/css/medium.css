@@ -23,6 +23,23 @@
     padding-bottom: 0.5rem;
     font-size: 1.4rem;
   }
+/* discover main*/
+#discover-main {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.intro {
+  font-weight: bolder;
+  font-style: oblique;
+}
+#discover-main article {
+  font-size: 0.9rem;
+  max-width: 400px;
+}
+#discover-main article:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
 
   .hero,
   .spotlightContainer,

@@ -49,6 +49,15 @@
         grid-template-rows: 1fr 1fr 1fr;
         font-size: 1.8rem;
     }
+    #discover-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        font-size: 1.2rem;
+      }
+    article.intro {
+        grid-column: span 2;
+    }
+
     .event{
         grid-column: 1/2;
         grid-row: 1/2;

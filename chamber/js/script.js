@@ -21,3 +21,11 @@ function toggleMenu() {
     document.querySelector(".bannerclose").closest(".banner").style.display = "none";
  });
 
+ /* banner Popup code*/
+
+let banner = document.querySelector("#banner");
+let dayOfWeek = new Date().getDay();
+
+if (dayOfWeek == 2 || dayOfWeek == 3) {
+  banner.style.display = "block";
+}
