@@ -2,7 +2,7 @@
 	--back: rgba(224, 57, 99, 1);
   --back2: rgba(224, 57, 99, 0.5);
   --foredark: hsla(0,0%,10%,1);
-	--forelight: rgb(26, 24, 24);
+	--forelight: hsla(0,0%,100%,1);
 	--border: hsl(0,0%,20%);
 	--borderlight: hsl(0,0%,33%);
 	--zebraeven: rgb(144, 214, 247, 0.2);
@@ -29,7 +29,9 @@ tr:first-child th {
 	background-color: var(--back);
 	color: var(--forelight);
 }
-
+thead tr th {
+    color: var(--foredark);
+}
 th, td {
 	padding: 7px 15px;
 	border: 1px solid var(--borderlight);
@@ -37,6 +39,7 @@ th, td {
 
 th {
 	background-color: var(--back2);
+    color: var(--forelight);
 }
 
 td {
@@ -50,8 +53,35 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
 	background-color: var(--zebraodd);
 }
+tr td.bf{
+    font-style: italic;
+
+}
+tr td.bold{
+    background-color: #118df3;
+    color: white;
+}
 
 tfoot {
     background-color: var(--back2);
     font-size: smaller;
+}
+@media only screen and (min-width: 32em){   
+   
+    thead th{
+       
+        font-size: 2rem;
+    }
+    thead tr {
+        font-size: 1.8rem;
+    }
+    tbody {
+        font-size: 1.5rem;
+    }
+    tfoot{
+      
+      font-size: 1rem;
+    }
+    
+    
 }
