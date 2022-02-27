@@ -2,10 +2,11 @@
 	--back: rgba(224, 57, 99, 1);
   --back2: rgba(224, 57, 99, 0.5);
   --foredark: hsla(0,0%,10%,1);
-	--forelight: hsla(0,0%,100%,1);
+	--forelight: rgb(26, 24, 24);
 	--border: hsl(0,0%,20%);
 	--borderlight: hsl(0,0%,33%);
-	--zebra: rgb(144, 214, 247, 0.2);
+	--zebraeven: rgb(144, 214, 247, 0.2);
+    --zebraodd: rgba(8, 170, 245, 0.2);
     font-family: "ubuntu", "sans-serif";
 }
 
@@ -37,14 +38,20 @@ th, td {
 th {
 	background-color: var(--back2);
 }
-tfoot {
-    background-color: var(--zebra);
-}
 
 td {
 	text-align: center;
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--zebra);
+	background-color: var(--zebraeven);
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebraodd);
+}
+
+tfoot {
+    background-color: var(--back2);
+    font-size: smaller;
 }
