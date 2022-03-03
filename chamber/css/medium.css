@@ -94,4 +94,13 @@
   footer section {
     display: block;
   }
+  /*form css*/
+  form {
+    grid-column: span 4;
+  }
+  form input.submitBtn, form label.top, ::placeholder  {
+    font-size: 1.2rem;
+  }
 }
+
+

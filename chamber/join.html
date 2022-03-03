@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chamber of Commerce site for WDD 230 project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover" />
+    <meta name="author" content="Ekpenyong Etim" />
+    <meta name="description"
+        content="Chamber of commerce site is a resource for reference when looking for hotel accomodations, Tourist sites and bookings." />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <picture>
+                    <img src="images/logo0.png" alt="logo" srcset="
+                images/logo0.png 1x,
+                images/logo1.png 2x,
+                images/logo.png  3x
+              " />
+                </picture>
+                <section class="headings">
+                    <h1>Southern</h1>
+                    <div>Chamber of Commerce</div>
+                </section>
+            </div>
+
+            <div class="socials">
+                <a href="#" class="button1"><img src="images/faceb.png" alt="Facebook logo" /></a>
+                <a href="#" class="button2"><img src="images/linkedinlogo.png" alt="Instagram logo" /></a>
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+                <ul id="primaryNav">
+                    <li><a href="#" class="active">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="date"></div>
+
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Info</legend>
+                <label class="top">Business Position<input type="text" name="bposition" pattern="[A-Za-z\s-]{7,}"
+                        title="Business Position" /></label>
+                <label class="top">Business Name<input type="text" name="bname" title="Business Name"
+                        required /></label>
+                <label class="top">Business Description <br /><textarea rows="3" name="bdes"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Package</legend>
+                <label class="sbs"><input type="radio" name="member" value="np" /><span class="package">
+                        Non-Profit </span><span class="cost"> Free </span></label>
+                <p class="description">
+                    Your business will be listed on the Southern Chamber of Commerce site for the World to see.
+                </p>
+                <label class="sbs"><input type="radio" name="member" value="bronze" /><span class="package">
+                        Bronze </span><span class="cost"> $500 Yearly Plan </span></label>
+                <p class="description">
+                    All of Non-Profit, plus, Recieve updates and information on how many users checked your Business Profile.
+                </p>
+                <label class="sbs"><input type="radio" name="member" value="silver" /><span class="package">
+                        Silver </span><span class="cost"> $1,500 monthly plan</span></label>
+                <p class="description">
+                    All of Non-Profit and Bronze, plus, occassional apperance in spotlight. Your business will appear midtier in the 
+                    SOuthern Chambers of Commerce Directory
+                </p>
+                <label class="sbs"><input type="radio" name="member" value="gold" /><span class="package">
+                        Gold </span><span class="cost"> $4,500 </span></label>
+                <p class="description">
+                    The Highest level of membership with all benefits including a top leveltier appearance in Chamber Directory.
+                    Realtime updates on business and other informations.
+                </p>
+            </fieldset>
+
+            <label><input type="hidden" id="hiddendate" name="hiddendate" value="" /></label>
+            <input type="submit" class="submitBtn" value="Join" />
+
+        </form>
+    </main>
+    <p><span class="label">Number of Visits:
+        </span><span class="visits"></span></p>
+    <footer>
+        <figure class="footer">
+            <img src="images/logo0.png" alt="logo" srcset="
+                images/logo0.png 1x,
+                images/logo1.png 2x,
+                images/logo.png  3x
+              " />
+
+            <article class="footerheading">
+                <h3>Southern Chamber of Commerce</h3>
+                <p>111 Murtala Mohammed Road, Southern Nigeria.</p>
+            </article>
+            <article class="footerlctn">
+                <p>
+                    info@southernchamberoc.com.ng<br />
+                    +(234) 80679-7187<br /><span>&#9906;</span>Location Map
+                </p>
+            </article>
+        </figure>
+        <section>
+            <div>
+                &copy;<span id="year">year</span> chamber | Ekpenyong E. Etim | WDD
+                230 Project |
+            </div>
+            <div class="date"><span id="lastModified"></span></div>
+        </section>
+    </footer>
+    <script src="js/script.js" defer></script>
+    <script src="js/currentdate.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+    <script src="js/numberofvisits.js" defer></script>
+</body>
+
+</html>

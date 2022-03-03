@@ -26,7 +26,7 @@
         display: flex;
         position: absolute;
         top: 1rem;
-        right: 20rem;
+        right: 12rem;
         border-left: 1px solid rgba(255,255,255,0.3);
     }
 
@@ -103,4 +103,12 @@
       footer section {
           padding-right: 3rem;
       }
+      /*form css*/
+  form {
+    grid-column: 2;
+    grid-row: span 4;
+  }
+  form input.submitBtn, form label.top, ::placeholder {
+    font-size: 1.8rem;
+  }
 }

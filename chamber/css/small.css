@@ -351,3 +351,91 @@ footer .date {
     display: table;
     clear: both;
 }
+
+/* form css */
+form fieldset {
+    margin: 2rem 0;
+    border: 2px initial #071B6D;
+    border-radius: 8px;
+    padding: .5rem 2%;
+}
+form legend {
+    border-radius: .75rem;
+    background-color: #071B6D;
+    color: white;
+    margin: 0 1rem;
+    padding: .75rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 30rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form textarea {
+    width: 83%;
+    max-width: 30rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.2rem;
+  }
+
+form input.submitBtn {
+    border: none;
+    color: white;
+    background-color: orangered;
+    border: 3px solid white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    line-height: 1;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+.package {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .cost {
+    background-color: rgb(219, 164, 11);
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 8px;
+  }
+fieldset p, article figure.container p {
+    text-align: left;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
