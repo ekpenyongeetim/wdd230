@@ -109,6 +109,6 @@
     grid-row: span 4;
   }
   form input.submitBtn, form label.top, ::placeholder {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }

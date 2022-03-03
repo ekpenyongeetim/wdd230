@@ -99,7 +99,7 @@
     grid-column: span 4;
   }
   form input.submitBtn, form label.top, ::placeholder  {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
