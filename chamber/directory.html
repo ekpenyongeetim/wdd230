@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chamber of Commerce site for WDD 230 project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover" />
+    <meta name="author" content="Ekpenyong Etim" />
+    <meta name="description"
+        content="Chamber of commerce site is a resource for reference when looking for hotel accomodations, Tourist sites and bookings." />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="bannercontent">
+                <p>
+                    🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+                    p.m!
+                </p>
+                <button class="bannerclose" type="button">
+                    <span class="material-icons"> close </span>
+                </button>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <picture>
+                    <img src="images/logo0.png" alt="logo" srcset="
+                images/logo0.png 1x,
+                images/logo1.png 2x,
+                images/logo.png  3x
+              " />
+                </picture>
+                <section class="headings">
+                    <h1>Southern</h1>
+                    <div>Chamber of Commerce</div>
+                </section>
+            </div>
+
+            <div class="socials">
+                <a href="#" class="button1"><img src="images/faceb.png" alt="Facebook logo" /></a>
+                <a href="#" class="button2"><img src="images/linkedinlogo.png" alt="Instagram logo" /></a>
+            </div>
+
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+                <ul id="primaryNav">
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="join.html">join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="date"></div>
+
+    </header>
+
+    <main>
+
+        
+    </main>
+
+    <footer>
+        <figure class="footer">
+            <img src="images/logo0.png" alt="logo" srcset="
+              images/logo0.png 1x,
+              images/logo1.png 2x,
+              images/logo.png  3x
+            " />
+
+            <article class="footerheading">
+                <h3>Southern Chamber of Commerce</h3>
+                <p>111 Murtala Mohammed Road, Southern Nigeria.</p>
+            </article>
+            <article class="footerlctn">
+                <p>
+                    info@southernchamberoc.com.ng<br />
+                    +(234) 80679-7187<br /><span>&#9906;</span>Location Map
+                </p>
+            </article>
+        </figure>
+        <section>
+            <div>
+                &copy;<span id="year">year</span> chamber | Ekpenyong E. Etim | WDD
+                230 Project |
+            </div>
+            <div class="date"><span id="lastModified"></span></div>
+        </section>
+    </footer>
+    <script src="js/script.js" defer></script>
+    <script src="js/currentdate.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+{
+    "businesses": [
+      {
+        "name": "Color Star Technologies LTD",
+        "description": "Digital startup that deals in editing photo and video files.",
+        "address": "402 Lagos street, Calabar, Nigeria",
+        "phone": "234-733-5711",
+        "website": "https://www.colorstartech.com.ng",
+        "image": "images/colorstartech.webp"
+      },
+      {
+        "name": "Dallas Football Club.",
+        "description": "Indegenous football academy that trains young promissing youths",
+        "address": "801 Stadium road, Ikot Ansa, Calabar, Nigeria",
+        "phone": "234-423-1280",
+        "website": "https://www.dallasfc.com.ng",
+        "image": "images/dallasfc.webp"
+      },
+      {
+        "name": "Nano Space Foods INC.",
+        "description": "Deals on Research and Developement of food technology for Astronauts",
+        "address": "Ed SUlivan theather, NYC, USA",
+        "phone": "314-871-9621",
+        "website": "https://www.nanofoods.com",
+        "image": "images/deepspace.webp"
+      },
+      {
+        "name": "Forge Rock Contruction",
+        "description": "Hardcore 5star Building and Civil Engineering firm",
+        "address": "32 Esatern Highway, Bayelsa, Nigeria",
+        "phone": "234-942-9273",
+        "website": "https://www.forgerock.com.ng",
+        "image": "images/forgerock.webp"
+      },
+      {
+        "name": "Golden Phoenix INC",
+        "description": "A Fashion brand with notable designer labels including; Vasace, etc",
+        "address": "902 Country Lane, CA, USA",
+        "phone": "234-359-9273",
+        "website": "https://www.goldenphoenix.com.ng",
+        "image": "images/goldenpheonix.webp"
+      },
+      {
+        "name": "Hulk Eye Security.",
+        "description": "A Private Security firm with high tech surveillance gadgets",
+        "address": "30 Goodluck Ebele Jonathan Way, Ogoja, CRS. NG",
+        "phone": "234-124-8711",
+        "website": "https://www.hulkeye.com.ng",
+        "image": "images/hulkeye.webp"
+      },
+      {
+        "name": "Olive Trees LTD",
+        "description": "An Organized union for Hospitality business mogols",
+        "address": "781 W. Exchange way., Suite 150, CA, USA",
+        "phone": "972-201-1763",
+        "website": "https://www.olivetress.com",
+        "image": "images/olivetree.webp"
+      },
+      {
+        "name": "Pathway Mission CHurch",
+        "description": "A conglomerate of churches around the Southern Seatorial District of Nigeria",
+        "address": "710 drive, VermonT, Pensylvania, USA",
+        "phone": "972-390-1873",
+        "website": "https://www.pathwaychurch.org",
+        "image":"images/pathwaychurch.webp"
+      },
+      {
+        "name": "All American Premium Designs",
+        "description": "Experts on logos, Business card, greeting cards, etc...",
+        "address": "14 Park Avenue, Lagos, Nigeria",
+        "phone": "972-679-6830",
+        "website": "https://www.premiumamerica.com",
+        "image": "images/premiumdesigns.webp"
+      },
+      {
+        "name": "Sunny Life Care Center",
+        "description": "Specializes on all medicinal herbs and natural supplement for a healthy life",
+        "address": "18 Forest Avenue Ibadan, Ogun, NG",
+        "phone": "972-349-1127",
+        "website": "https://www.sunnylife.org",
+        "image": "images/sunnylife.webp"
+      },
+      {
+        "name": "Video Assistant Referee Statitics",
+        "description": "Referee assistance for all kind of sports and sporting analytics",
+        "address": "200 E. Stacy Rd. Building, CA, USA",
+        "phone": "114-912-1000",
+        "website": "https://www.varstats.com.ng",
+        "image": "images/varstatistics.webp"
+      },
+      {
+        "name": "Violet Ventures",
+        "description": "Dealers on all types of flowers for different occassions and holidays",
+        "address": "1133 Port Harcourt way, Usman, LA",
+        "phone": "972-748-4351",
+        "website": "https://www.violetventures.com",
+        "image": "images/violetventures.webp"
+      }
+    ]
+}
