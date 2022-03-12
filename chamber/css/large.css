@@ -114,5 +114,7 @@
   /*directory css*/
   .cards {
       grid-column: span 4;
+      grid-row: span 4;
   }
+
 }
