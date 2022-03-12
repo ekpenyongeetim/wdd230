@@ -439,3 +439,37 @@ fieldset p, article figure.container p {
     color: #555;
     margin-bottom: 1.5rem;
 }
+
+/* directory css*/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    text-align: center;
+    padding: 0;
+}
+
+.cards img {  
+    width: 50%;
+    height: auto;
+}
+
+.cards h2, h3 {
+    font-size: .8rem;
+}
+
+.cards section {
+    margin: 0.25rem;
+    padding: .5rem;
+    background-color: white;
+    border: 1px solid #777;
+    align-items: center;
+    
+}
+
+.cards section:nth-child(even) {
+    background-color: #eee;
+}
+section:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

@@ -101,6 +101,13 @@
   form input.submitBtn, form label.top, ::placeholder  {
     font-size: 1.1rem;
   }
+  /* directory css*/
+  .cards {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
 }
 
 

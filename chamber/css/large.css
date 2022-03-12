@@ -45,7 +45,7 @@
         border-radius: 9px 0 9px 0;
       }
     main {
-        grid-template-columns: 1fr 50% 1fr;
+        grid-template-columns: 1fr 60% 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         font-size: 1.8rem;
     }
@@ -110,5 +110,9 @@
   }
   form input.submitBtn, form label.top, ::placeholder {
     font-size: 1.6rem;
+  }
+  /*directory css*/
+  .cards {
+      grid-column: span 4;
   }
 }
