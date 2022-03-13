@@ -1,5 +1,5 @@
 const requestURL = "https://ekpenyongeetim.github.io/wdd230/data/data.json";
-const cards = document.querySelector(".cards");
+const cards = document.querySelector(".card-view");
 
 fetch(requestURL)
 	.then(function (response) {
@@ -27,7 +27,7 @@ function displayBusinesses(businesses) {
 	// Change the textContent property of the h2 element to contain the prophet's full name
 	h2.innerHTML = `${businesses.name}`;
     h3.innerHTML = `${businesses.address}`;
-    p1.innerHTML = `${businesses.description}`;
+    p1.innerHTML = `<span class="highlight">${businesses.description}</span>`;
     p2.innerHTML = `${businesses.phone}`;
     p3.innerHTML = `${businesses.website}`;
 
@@ -44,8 +44,20 @@ function displayBusinesses(businesses) {
 	card.appendChild(p2);
     card.appendChild(p3);
 	// Add/append the existing HTML div with the cards class with the section(card)
-	cards.appendChild(card);
+	document.querySelector('.card-view').appendChild(card);
 }
+
+const cardButton = document.getElementById('card-btn');
+const listButton = document.getElementById('list-btn');
+
+listButton.addEventListener("click", ()=> {
+    cards.classList.replace("card-view", "list-view")
+});
+
+cardButton.addEventListener("click", ()=> {
+    cards.classList.replace("list-view", "card-view")
+});
+
 
 
 /*

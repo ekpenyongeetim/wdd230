@@ -102,13 +102,30 @@
     font-size: 1.1rem;
   }
   /* directory css*/
-  .cards {
+  .card-view {
     grid-column: span 4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
-
-
+  .view-btn button img {
+    width: 2.2rem;
+}
+.list-view  {
+  grid-column: span 4;
+}
+.list-view section {
+  display: flex;
+  flex-grow: 1 1;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+#directory h1, .view-btn {
+  grid-column: span 4;
+}
+#directory h2 {
+  margin-right: 1rem;
+}
 }
 
 

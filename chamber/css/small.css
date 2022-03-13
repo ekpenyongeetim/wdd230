@@ -169,11 +169,14 @@ nav ul.open {
 figure.container {
     padding: 2px 16px;
 }
-article.intro, p{
+
+article.intro,
+p {
     padding: 0;
     margin: 0;
     text-align: left;
 }
+
 main {
 
     margin: .5rem 0 .5rem 0;
@@ -359,6 +362,7 @@ form fieldset {
     border-radius: 8px;
     padding: .5rem 2%;
 }
+
 form legend {
     border-radius: .75rem;
     background-color: #071B6D;
@@ -367,14 +371,16 @@ form legend {
     padding: .75rem;
 }
 
-form label.top, form div {
+form label.top,
+form div {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem;
 }
 
-form label.top input, form label.top select {
+form label.top input,
+form label.top select {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -398,7 +404,7 @@ form textarea {
     max-width: 30rem;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0.2rem;
-  }
+}
 
 form input.submitBtn {
     border: none;
@@ -422,26 +428,32 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
 .package {
     font-weight: bold;
     color: black;
-  }
-  
-  .cost {
+}
+
+.cost {
     background-color: rgb(219, 164, 11);
     font-weight: bold;
     padding: 0.25rem 1rem;
     margin-left: 0.5rem;
     border-radius: 8px;
-  }
-fieldset p, article figure.container p {
+}
+
+fieldset p,
+article figure.container p {
     text-align: left;
     color: #555;
     margin-bottom: 1.5rem;
 }
 
 /* directory css*/
-.cards {
+#directory h1 {
+    text-align: center;
+}
+.card-view {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: .5rem;
@@ -449,27 +461,85 @@ fieldset p, article figure.container p {
     padding: 0;
 }
 
-.cards img {  
+.cards img {
     width: 50%;
     height: auto;
 }
 
-.cards h2, h3 {
+.cards section {
+    padding: 0;
+}
+
+.cards h2,
+h3 {
     font-size: .8rem;
 }
 
-.cards section {
+#directory section:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px;
+    transform: scale(1.017);
+}
+
+.directory {
+    text-align: center;
+}
+
+.list-view img,
+.list-view>section .highlight {
+    display: none;
+}
+
+#directory section h2, h3, p {
+    padding: 0;
+    text-align: left;
+}
+
+.card-view img {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+.list-view {
+    padding: .5rem;
+    
+}
+.list-view>section h2 {
+    display: block;
+}
+
+.list-view section {
+    display: block;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.card-view section {
     margin: 0.25rem;
     padding: .5rem;
     background-color: white;
     border: 1px solid #777;
     align-items: center;
-    
 }
 
-.cards section:nth-child(even) {
-    background-color: #eee;
+.view-btn {
+    padding: 0.5em;
+    text-align: center;
 }
-section:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.view-btn button img {
+    width: 2rem;
+}
+.view-btn button {
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    background-color: none;
+    border-radius: .2rem;
+    margin: 1em;
+    border: solid 2px #071B6D;
+}
+
+.list-view section:nth-child(2n) {
+    background-color: #EDFBFA;
+}
+#list-btn {
+    background-color: #EDFBFA;
 }
