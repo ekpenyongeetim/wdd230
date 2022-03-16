@@ -1,4 +1,4 @@
-let t = parseFloat(document.getElementById("temp").textContent);
+/*let t = parseFloat(document.getElementById("temp").textContent);
 let s = parseFloat(document.getElementById("wind").textContent);
 let windchill = "";
 
@@ -14,6 +14,7 @@ function windChill(temp, speed) {
 	let windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * temp * Math.pow(speed, 0.16));
   return Math.round(windChill);
 }
+*/
 
 //wind chill
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=Calabar&units=imperial&appid=f3293b70767c8bf86281114d4805a4f8`;
@@ -25,8 +26,13 @@ fetch(apiURL)
     const currentTemp = document.querySelector('#current-temp');
     const weathericon = document.querySelector('#weathericon');
     const caption = document.querySelector('figcaption');
+    const windSpeed = document.querySelector('#windSpeed');
+    const windChill = document.querySelector('#windChill');
+    
 
-    currentTemp.textContent = x.main.temp.toFixed(0);
+    currentTemp.textContent = x.main.temp.toFixed(1);
+    windSpeed.textContent = x.wind.speed.toFixed(1);
+    windChill.textContent = x.main.feels_like.toFixed(1);
     let imgsrc = `https://openweathermap.org/img/w/${x.weather[0].icon}.png`;
     let imgalt = x.weather[0].description;
     imgalt = imgalt.split('').map(capitalize).join('');
@@ -38,3 +44,7 @@ fetch(apiURL)
     
      
   });
+
+  function capitalize(word) {
+    return `${word.charAt(0).toUpperCase()}${word.splice(1)}`;
+  }

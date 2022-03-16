@@ -22,12 +22,11 @@ function toggleMenu() {
  });
 
  /* banner Popup code*/
-const div = document.querySelector("banner");
-const closeButton = document.querySelector('bannerclose');
+const banner = document.querySelector(".banner");
+const dayOfWeek = new Date().getDay();
 
-if(nameDay == "Monday" || nameDay == "Tuesday"){
-	div.style.display = 'block';
+if (dayOfWeek == 2 || dayOfWeek == 3) {
+   banner.style.display = "block";
 } else {
-	div.style.display = 'none';
+	banner.style.display = 'none';
 }
-
