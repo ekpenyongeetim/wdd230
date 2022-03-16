@@ -21,34 +21,13 @@ function toggleMenu() {
     document.querySelector(".bannerclose").closest(".banner").style.display = "none";
  });
 
- /* banner Popup code
-
-let banner = document.querySelector("#banner");
-let dayOfWeek = new Date().getDay();
-
-if (dayOfWeek == 2 || dayOfWeek == 3) {
-  banner.style.display = "block";
-}
-
-const divList = document.querySelectorAll("div");
-
-const popUp = divList[0];
-*/
-let banner = document.querySelector("#banner");
-let closeButton = document.querySelector('bannerbutton');
+ /* banner Popup code*/
+const div = document.querySelector("banner");
+const closeButton = document.querySelector('bannerclose');
 
 if(nameDay == "Monday" || nameDay == "Tuesday"){
-	showElement();
+	div.style.display = 'block';
 } else {
-	hideElement();
-}
-closeButton.onclick = hideElement;
-
-
-function hideElement(){
-	popUp.setAttribute('class', 'hidden');
+	div.style.display = 'none';
 }
 
-function showElement(){
-	popUp.setAttribute('class', 'shown');
-}
