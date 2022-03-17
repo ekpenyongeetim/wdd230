@@ -4,18 +4,26 @@ document.getElementById("modify").innerHTML = document.lastModified
 
 const listsize = document.querySelector("#favchap");
 const buildButton = document.querySelector("button");
-const list = document.querySelector("#list");
+const list = document.querySelector(".list");
 
 
-buildButton.addEventListener("click", function() => {
-    //get the size
-    let size = Number(listsize.value);
-
-    // build HTML
-    for (let i = 1;
-        i <= size; i++) {
+buildButton.addEventListener("click", () => {
+  
         let li = document.createElement("li");
-        li.innerHTML = `Item: <strong>${i}</strong>`;
+        let deleteBtn = document.createElement("button");
+        li.innerHTML = listsize.value;
+        deleteBtn.textContent = `❌`;
+
+        li.append(deleteBtn);
         list.append(li);
-    }
+
+        deleteBtn.addEventListener("click", function() {
+            list.removeChild(li);
+            // focus puts the focus back into the input box(cursor)
+            listsize.focus();
+        
+        });
+
+        listsize.value = ``;
+        listsize.focus();
 });

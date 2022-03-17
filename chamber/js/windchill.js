@@ -30,9 +30,15 @@ fetch(apiURL)
     const windChill = document.querySelector('#windChill');
     
 
-    currentTemp.textContent = x.main.temp.toFixed(1);
-    windSpeed.textContent = x.wind.speed.toFixed(1);
-    windChill.textContent = x.main.feels_like.toFixed(1);
+    currentTemp.textContent = x.main.temp.toFixed(0);
+    windSpeed.textContent = x.wind.speed.toFixed(0);
+
+    if (x.main.temp <=50 && x.wind.speed > 3 ) {
+      windChill.textContent = x.main.feels_like.toFixed(1); 
+    } else {
+      windChill.textContent = `N/A`; 
+    }
+    
     let imgsrc = `https://openweathermap.org/img/w/${x.weather[0].icon}.png`;
     let imgalt = x.weather[0].description;
     imgalt = imgalt.split('').map(capitalize).join('');
@@ -46,5 +52,5 @@ fetch(apiURL)
   });
 
   function capitalize(word) {
-    return `${word.charAt(0).toUpperCase()}${word.splice(1)}`;
+    return `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
   }
