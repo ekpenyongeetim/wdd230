@@ -18,11 +18,13 @@
   main {
     margin: 0 auto;
     display: grid;
-    grid-gap: 0.5rem;
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 0.5rem;
     font-size: 1.4rem;
   }
+  main div {
+    margin: 1% 1% .5% 1%;
+}
 /* discover main*/
 #discover-main {
   grid-template-columns: 1fr;

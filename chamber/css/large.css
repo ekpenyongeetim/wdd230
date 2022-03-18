@@ -1,11 +1,11 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 60em) {
     header h1 {
-        font-size: 2.9rem;
+        font-size: 2.5rem;
     }
 
     header h2 {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     .footer {
         max-width: 1000px;
@@ -21,13 +21,17 @@
     }
     nav button {display: none;}
 
+    .navigation {
+        min-width: 8rem;
+    }
     nav ul#primaryNav {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         display: flex;
         position: absolute;
         top: 1rem;
-        right: 12rem;
+        right: 14rem;
         border-left: 1px solid rgba(255,255,255,0.3);
+
     }
 
     nav ul li a {
@@ -37,7 +41,7 @@
 
     .socials  {
         position: absolute;
-        right: 1rem;
+        right: 3rem;
     }
     #date {
         width: 26rem;

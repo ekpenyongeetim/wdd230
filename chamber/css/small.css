@@ -61,7 +61,8 @@ header .headings {
 h1 {
     font-size: 1.3rem;
     margin: 0;
-    font-family: 'Roboto', serif;
+    font-family: cur;
+    
 }
 
 .headings div {
@@ -94,20 +95,20 @@ nav ul {
 
 nav ul li a {
     display: block;
-    padding: .8rem 2vw;
+    padding: .4rem 1vw;
     text-decoration: none;
     color: #071b6d;
 }
 
-nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #62B9F9;
+nav ul li:active a {
+    color: white;
+    background-color: #62B9F9;
 }
 
 nav ul li a:hover {
     color: white;
-    background-color: #071b6d;
-    border-radius: 1rem;
+    background-color: #62B9F9;
+    border-radius: .5rem;
 }
 
 nav ul {
@@ -146,18 +147,18 @@ nav ul.open {
     align-items: center;
 }
 
-/* discover main*/
+/* discover main
 #discover-main {
     display: grid;
     grid-gap: 1rem;
 }
-
+*/
 #discover-main article {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 100vw;
     border-radius: 5px;
     font-size: 0.8rem;
+    margin: 2%;
 }
 
 #discover-main article img {
@@ -165,16 +166,18 @@ nav ul.open {
     width: 100%;
     height: auto;
 }
-
-figure.container {
-    padding: 2px 16px;
+article.intro,
+#discover-main p {
+    padding: .5rem;
+    margin: 5%;
+    text-align: left;
+    font-size: .9;
+    color: #555;
 }
 
-article.intro,
-p {
-    padding: 0;
+.card figure.container {
+    padding: 2px 16px;
     margin: 0;
-    text-align: left;
 }
 
 main {
@@ -295,6 +298,8 @@ main button:hover, .join h2:hover {
 .temperature {
     grid-column: 1;
     grid-row: 2;
+    font-weight: bolder;
+    font-size: x-large;
 }
 .weather figure p {
     font-size: larger;
@@ -362,7 +367,9 @@ footer {
     margin: 0 auto;
     display: block;
 }
-
+footer p {
+    color: white;
+}
 footer figure {
     margin: 0;
 }
