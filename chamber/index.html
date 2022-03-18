@@ -31,11 +31,11 @@
     <div class="header">
       <div class="logo">
         <picture>
-          <img src="images/logo0.png" alt="logo" srcset="
+          <a href="index.html"> <img src="images/logo0.png" alt="logo" srcset="
                 images/logo0.png 1x,
                 images/logo1.png 2x,
                 images/logo.png  3x
-              " />
+              " /></a>
         </picture>
         <section class="headings">
           <h1>Southern</h1>
@@ -44,17 +44,18 @@
       </div>
 
       <div class="socials">
-        <a href="#" class="button1"><img src="images/faceb.png" alt="Facebook logo" /></a>
-        <a href="#" class="button2"><img src="images/linkedinlogo.png" alt="Instagram logo" /></a>
+        <a href="facebook.com" class="button1"><img src="images/faceb.png" alt="Facebook logo" /></a>
+        <a href="linkedin.com" class="button2"><img src="images/linkedinlogo.png" alt="Instagram logo" /></a>
       </div>
 
       <nav>
         <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
         <ul id="primaryNav">
-          <li><a href="discover.html" class="active">Discover</a></li>
-          <li><a href="#">Directory</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">join</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contacts.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -63,15 +64,20 @@
   </header>
 
   <main id="index-main">
+
     <div class="hero">
       <picture class="myphoto">
         <source media="(max-width: 450px)" srcset="images/herosmall.webp" />
         <source media="(max-width: 700px)" srcset="images/heromedium.webp" />
         <img src="images/herolarge.webp" alt="church" />
       </picture>
-      <h2>Welcome to Southern Nigeria</h2>
-      <button>Join the chamber</button>
+      <di class="subhero">
+        <h2>Welcome to Southern Nigeria</h2>
+        <p>Here you will find a vareity of travel destinations, and hotels that suit you.</p>
+        <button class="join-btn" onclick="window.location.href='join.html';">Join Us</button>
+      </div>
     </div>
+
     <div class="event">
       <h2>Upcoming Events</h2>
       <p>🤝🏼 Meet and greet on April, 14th</p>
@@ -82,16 +88,19 @@
       <figure>
         <img src="" alt="" id="weathericon" />
         <figcaption></figcaption>
-        <p>
-          Temperature: <span id="current-temp"></span>&deg;F
-        </p>
       </figure>
-      <p>
-        Wind Speed: <span id="windSpeed"></span>mph
-      </p>
-      <p>
-        Wind Chill:<span id="windChill"></span>
-      </p>
+      <section class="weatherp">
+        Temperature: 
+        <p class="temperature">
+          <span id="current-temp"></span>&deg;F
+        </p>
+        <p class="windspeed">
+          Wind Speed: <span id="windSpeed"></span>mph
+        </p>
+        <p class="windchill">
+          Wind Chill:<span id="windChill"></span>
+        </p>
+      </section>
     </div>
 
     <div class="release">
