@@ -1,8 +1,8 @@
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const imgOptions = {
-    threshold: 2,
-    rootMargin: '0px 0px 100px 0px'
+    threshold: 0,
+    rootMargin: '0px 0px 500px 0px'
 }
 
 const loadImages = (img) => {
@@ -31,7 +31,7 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-/* intercection observer will only load images once the user scrolls tpo it
+/* intercection observer will only load images once the user scrolls to it
 if('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((items, observer) => {
       items.forEach((item) => {

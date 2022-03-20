@@ -147,29 +147,26 @@ nav ul.open {
     align-items: center;
 }
 
-/* discover main
-#discover-main {
-    display: grid;
-    grid-gap: 1rem;
-}
-*/
-#discover-main article {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    margin: 2%;
+main h2 {
+    font-family: cursive;
+    color: #071B6D;
+    text-align: center;
+    margin: 0 auto;
 }
 
-#discover-main article img {
+#discover-main div.discover-main-div {
+    padding: 0;
+    margin: 0 auto;  
+}
+
+img {
     border-radius: 8px 8px 0 0;
     width: 100%;
     height: auto;
 }
-article.intro,
-#discover-main p {
+
+#discover-main .discover-main-div p {
     padding: .5rem;
-    margin: 5%;
     text-align: left;
     font-size: .9;
     color: #555;
@@ -186,7 +183,7 @@ main {
     max-width: 1200px;
 }
 
-main h2 {
+main h3 {
     text-align: center;
     border-bottom: 2px solid rgba(7,27,109,0.5);
     font-size: 1.13rem;
@@ -196,8 +193,8 @@ main h2 {
     color: #071B6D;
 }
 
-main div {
-    padding: 5rem;
+#index-main div, div.card, div.intro {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     font-size: 0.8rem;
@@ -217,7 +214,7 @@ main div {
     height: 100%;
 }
 
-.hero h2 {
+.hero h3 {
     border-bottom: none;
     text-align: left;
 }
@@ -255,7 +252,7 @@ button {
     border-radius: .6rem;
 }
 
-main button:hover, .join h2:hover {
+main button:hover, .join h2:hover, form input.submitBtn:hover {
     color: #9B4AE9;
     background-color: white;
     border: 1px solid #9B4AE9;
@@ -277,6 +274,7 @@ main button:hover, .join h2:hover {
 .spotl1 img,
 .spotl2 img {
     width: 100%;
+    border-radius: 0 0 0 0;
 }
 
 .weather {
@@ -295,6 +293,7 @@ main button:hover, .join h2:hover {
     grid-template-columns: 1fr 1fr;
     margin: 5%;
 }
+
 .temperature {
     grid-column: 1;
     grid-row: 2;
@@ -319,7 +318,7 @@ main button:hover, .join h2:hover {
 }
 main p {
     text-align: left;
-    margin: 2%;
+    /* margin: 2%; */
 }
 
 .release,
@@ -331,7 +330,7 @@ main p {
     margin: 5%;
 }
 
-.join h2 {
+.join h3 {
     transition: all .5s ease;
     color: #fff;
     font-size: 1rem;
@@ -346,7 +345,7 @@ main p {
     border-radius: .5rem;
     text-align: center;
     cursor: pointer;
-    margin: 0.5% 5% 0 5%;
+    margin: 2% 5% 0 5%;
 }
 
 footer img {
@@ -392,10 +391,11 @@ footer p, footer h3 {
 
 /* form css */
 form fieldset {
-    margin: 2rem 0;
+    margin: 2rem 2%;
     border: 2px initial #071B6D;
     border-radius: 8px;
     padding: .5rem 2%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 form legend {
@@ -444,9 +444,9 @@ form textarea {
 form input.submitBtn {
     border: none;
     color: white;
-    background-color: orangered;
-    border: 3px solid white;
-    border-radius: 1rem;
+    background-color: #9B4AE9;
+    border: 1px solid white;
+    border-radius: .6rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
@@ -454,11 +454,13 @@ form input.submitBtn {
     line-height: 1;
     font-size: 17px;
     cursor: pointer;
+    transition: all .5s ease;
 }
 
 form label.top input:required {
     border-left: red solid 6px;
 }
+
 
 form label.top input:required:valid {
     border-left: green solid 6px;

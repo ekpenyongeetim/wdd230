@@ -19,29 +19,43 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
     padding-bottom: 0.5rem;
     font-size: 1.4rem;
+    
   }
-  main div {
-    margin: 1% 1% .5% 1%;
+  
+main h2 {
+  grid-column: span 4;
+  grid-row: 1;
 }
-/* discover main*/
-#discover-main {
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-.intro {
-  font-weight: bolder;
-  font-style: oblique;
-}
-#discover-main article {
-  font-size: 0.9rem;
-  max-width: 400px;
-}
-#discover-main article:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  #index-main div {
+    margin: 1% 1% 0.5% 1%;
+  }
+
+  #discover-main div.discover-main-div {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+
 }
 
+#discover-main div.card, div.intro {
+  min-width: 300px;
+  grid-column: span 1;
+}
+#discover-main div.intro {
+  grid-column: span 2;
+    font-weight: bolder;
+    font-style: oblique;
+  }
+ 
+  #discover-main div {
+    font-size: 0.9rem;
+  }
+  #discover-main article:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  }
 
   .hero,
   .spotlightContainer,
@@ -85,7 +99,8 @@
     height: auto;
   }
 
-  footer h3, .footerheading p {
+  footer h3,
+  .footerheading p {
     margin: 0;
     text-align: left;
   }
@@ -100,7 +115,9 @@
   form {
     grid-column: span 4;
   }
-  form input.submitBtn, form label.top, ::placeholder  {
+  form input.submitBtn,
+  form label.top,
+  ::placeholder {
     font-size: 1.1rem;
   }
   /* directory css*/
@@ -111,23 +128,22 @@
   }
   .view-btn button img {
     width: 2.2rem;
+  }
+  .list-view {
+    grid-column: span 4;
+  }
+  .list-view section {
+    display: flex;
+    flex-grow: 1 1;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #directory h1,
+  .view-btn {
+    grid-column: span 4;
+  }
+  #directory h2 {
+    margin-right: 1rem;
+  }
 }
-.list-view  {
-  grid-column: span 4;
-}
-.list-view section {
-  display: flex;
-  flex-grow: 1 1;
-  padding: 0.5rem;
-  align-items: center;
-  justify-content: space-between;
-}
-#directory h1, .view-btn {
-  grid-column: span 4;
-}
-#directory h2 {
-  margin-right: 1rem;
-}
-}
-
-

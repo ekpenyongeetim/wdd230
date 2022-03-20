@@ -50,40 +50,46 @@
       }
     main {
         grid-template-columns: 1fr 60% 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
         font-size: 1.8rem;
     }
-    #discover-main {
+    main h1 {
+        grid-column: span 4;
+        grid-row: 1;
+        padding: 0;
+      }
+    /*#discover-main {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: none;
         font-size: 1.2rem;
-      }
+      } */
+
     article.intro {
         grid-column: span 2;
     }
 
     .event{
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
     }
 
     .hero{
         grid-column: 2/3;
-        grid-row: 1/3;
+        grid-row: 2/4;
     }
 
     .weather{
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 
     .release{
         grid-column: 2/3;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
     .spotlightContainer{
         grid-column: 3/4;
-        grid-row: 1/4;
+        grid-row: 2/5;
         flex-direction: column;
         align-items: stretch;
     }
@@ -93,7 +99,7 @@
 
     .join{
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 4/5;
     }
     footer section {
         display: flex;

@@ -13,7 +13,9 @@
       name="description"
       content="Progressive loading image site to practice the application of lazy loading on imges using CSS and Javascript."
     />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/lazyload.css" rel="stylesheet" />
+
+    <script src="js/lazyload.js" defer></script>
   </head>
 
   <body>
@@ -36,7 +38,7 @@
         <picture>
           <img
             src="images/placeholder.png"
-            data-src="images/redpetalspic.webp"
+            data-src="images/redpetalpic.webp"
             alt="red petals image"
           />
         </picture>
@@ -57,7 +59,6 @@
         <p><span class="label">Number of Visits:
         </span><span class="visits"></span></p>
     </main>
-    <script src="js/script.js" defer></script>
-    <script src="js/numberofvisits.js" defer></script>
+    
   </body>
 </html>

@@ -16,7 +16,7 @@ picture img {
     height: auto;
 }
 picture img[data-src] {
-    filter: blur(0.1em);
+    filter: blur(0.7em);
 }
 picture img{
     filter: none;
