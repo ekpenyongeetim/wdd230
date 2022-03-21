@@ -53,20 +53,18 @@
         grid-template-rows: auto 1fr;
         font-size: 1.8rem;
     }
-    main h1 {
-        grid-column: span 4;
+    main h2 {
+        grid-column: span 3;
         grid-row: 1;
         padding: 0;
       }
-    /*#discover-main {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: none;
-        font-size: 1.2rem;
-      } */
-
-    article.intro {
-        grid-column: span 2;
+      #discover-main div.discover-main-div {
+        grid-template-columns: 1fr 1fr 1fr; 
+        max-width: 1200px;
     }
+    #discover-main div.intro {
+        grid-column: span 1;
+        }
 
     .event{
         grid-column: 1/2;
@@ -125,6 +123,9 @@
   .cards {
       grid-column: span 4;
       grid-row: span 4;
+  }
+  h2 {
+      font-size: 1.7rem;
   }
 
 

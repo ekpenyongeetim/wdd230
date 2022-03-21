@@ -390,6 +390,16 @@ footer p, footer h3 {
 }
 
 /* form css */
+form.contact{
+	margin: 1em auto;
+	width: 100%;
+	background-color: transparent;
+}
+
+form.contact input{
+	padding: 10px 50px;
+}
+
 form fieldset {
     margin: 2rem 2%;
     border: 2px initial #071B6D;
@@ -487,9 +497,7 @@ article figure.container p {
 }
 
 /* directory css*/
-#directory h1 {
-    text-align: center;
-}
+
 .card-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -503,19 +511,13 @@ article figure.container p {
     height: auto;
 }
 
-.cards section {
+#directory-main div.cards section {
     padding: 0;
 }
 
 .cards h2,
 h3 {
     font-size: .8rem;
-}
-
-#directory section:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 2px;
-    transform: scale(1.017);
 }
 
 .directory {
@@ -527,21 +529,16 @@ h3 {
     display: none;
 }
 
-#directory section h2, h3, p {
-    padding: 0;
+#directory section h3, h4, p {
+    margin: 2%;
     text-align: left;
 }
 
-.card-view img {
-    display: block;
-    width: 60%;
-    margin: auto;
-}
 .list-view {
     padding: .5rem;
     
 }
-.list-view>section h2 {
+.list-view>section h3 {
     display: block;
 }
 
@@ -549,16 +546,27 @@ h3 {
     display: block;
     padding: 0.5rem;
     text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
-.card-view section {
+#directory-main .card-view section {
     margin: 0.25rem;
     padding: .5rem;
     background-color: white;
     border: 1px solid #777;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
-
+#directory-main .card-view section img {
+    border-radius: 0 0 0 0;
+    display: block;
+    width: 60%;
+    margin: auto;
+}
 .view-btn {
     padding: 0.5em;
     text-align: center;

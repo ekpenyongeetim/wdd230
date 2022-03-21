@@ -17,16 +17,16 @@ fetch(requestURL)
 function displayBusinesses(businesses) {
 	// Create elements to add to the document
 	let card = document.createElement('section');
-	let h2 = document.createElement('h2');
-    let h3 = document.createElement('h3');
+	let h3 = document.createElement('h3');
+    let h4 = document.createElement('h4');
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
 	let portrait = document.createElement('img');
 
 	// Change the textContent property of the h2 element to contain the prophet's full name
-	h2.innerHTML = `${businesses.name}`;
-    h3.innerHTML = `${businesses.address}`;
+	h3.innerHTML = `${businesses.name}`;
+    h4.innerHTML = `${businesses.address}`;
     p1.innerHTML = `<span class="highlight">${businesses.description}</span>`;
     p2.innerHTML = `${businesses.phone}`;
     p3.innerHTML = `${businesses.website}`;
@@ -38,8 +38,8 @@ function displayBusinesses(businesses) {
 
 	// Add/append the section(card) with the h2 element
     card.appendChild(portrait);
-	card.appendChild(h2);
-    card.appendChild(h3);
+	card.appendChild(h3);
+    card.appendChild(h4);
     card.appendChild(p1);
 	card.appendChild(p2);
     card.appendChild(p3);

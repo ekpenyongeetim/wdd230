@@ -49,14 +49,14 @@ main h2 {
     font-weight: bolder;
     font-style: oblique;
   }
- 
+  #directory-main section:hover, .discover-main-div div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+    border: 2px;
+    transform: scale(1.017);
+}
   #discover-main div {
     font-size: 0.9rem;
   }
-  #discover-main article:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
-  }
-
   .hero,
   .spotlightContainer,
   .join,
@@ -139,11 +139,14 @@ main h2 {
     align-items: center;
     justify-content: space-between;
   }
-  #directory h1,
+  #directory h2,
   .view-btn {
     grid-column: span 4;
   }
   #directory h2 {
     margin-right: 1rem;
   }
+  h2 {
+    font-size: 1.5rem;
+}
 }
