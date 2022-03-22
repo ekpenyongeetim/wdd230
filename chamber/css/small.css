@@ -381,6 +381,9 @@ footer .date {
 footer p, footer h3 {
     margin: 5%;
 }
+div.footer-section {
+    padding-bottom: 3%;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -390,14 +393,21 @@ footer p, footer h3 {
 }
 
 /* form css */
-form.contact{
-	margin: 1em auto;
-	width: 100%;
-	background-color: transparent;
+#contact-main h3 {
+    border-bottom: none;
+    font-size: 1.4rem;
 }
 
-form.contact input{
-	padding: 10px 50px;
+#contact-main div.left-div {
+    margin: 3%;
+}
+#contact-main div.left-div p {
+    padding: 5%;
+    border-bottom: 2px solid #555;
+    text-align: center;
+}
+#contact-main fieldset {
+    margin-top: 0;
 }
 
 form fieldset {
@@ -487,6 +497,7 @@ form label.top input:required:valid {
     padding: 0.25rem 1rem;
     margin-left: 0.5rem;
     border-radius: 8px;
+    color: black;
 }
 
 fieldset p,

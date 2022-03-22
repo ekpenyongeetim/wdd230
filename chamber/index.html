@@ -15,6 +15,11 @@
   <link href="css/small.css" rel="stylesheet" />
   <link href="css/medium.css" rel="stylesheet" />
   <link href="css/large.css" rel="stylesheet" />
+
+  <script src="js/windchill.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/currentdate.js" defer></script>
+  <script src="js/lazyload.js" defer></script>
 </head>
 
 <body>
@@ -97,7 +102,7 @@
         <figcaption></figcaption>
       </figure>
       <section class="weatherp">
-        Temperature: 
+        <h4>Temperature:</h4>
         <p class="temperature">
           <span id="current-temp"></span>&deg;F
         </p>
@@ -136,19 +141,21 @@
     </div>
     <div class="spotlightContainer">
       <div class="spotl1">
+        <h3>Luxury Accomodations</h3>
         <picture>
-          <h3>Luxury Accomodations</h3>
           <img src="images/placeholder.png" data-src="images/scene-river-medium.webp" alt="river view">
-          <p>We bring the world's finest closer to you.</p>
         </picture>
+        <p>We bring the world's finest closer to you.</p>
       </div>
+
       <div class="spotl2">
+        <h3>Top Hottest Destinations</h3>
         <picture>
-          <h3>Top Hottest Destinations</h3>
           <img src="images/placeholder.png" data-src="images/cover-city-medium.webp" alt="city view">
-          <p>We bring the world's finest closer to you.</p>
         </picture>
+        <p>We bring the world's finest closer to you.</p>
       </div>
+
       <div class="spotl3">
         <h3>Affordable</h3>
         <img src="images/placeholder.png" data-src="images/table-affodable.webp" alt="affordable picture">
@@ -172,25 +179,23 @@
         <h3>Southern Chamber of Commerce</h3>
         <p>111 Murtala Mohammed Road, Southern Nigeria.</p>
       </article>
-      <article class="footerlctn">
+      <div class="footerlctn">
         <p>
           info@southernchamberoc.com.ng<br />
           +(234) 80679-7187<br /><span>&#9906;</span>Location Map
         </p>
-      </article>
+      </div>
     </figure>
-    <section>
+
+    <div class="footer-section">
       <div>
         &copy;<span id="year">year</span> chamber | Ekpenyong E. Etim | WDD
         230 Project |
       </div>
       <div class="date"><span id="lastModified"></span></div>
-    </section>
+    </div>
   </footer>
-  <script src="js/windchill.js" defer></script>
-  <script src="js/script.js" defer></script>
-  <script src="js/currentdate.js" defer></script>
-  <script src="js/lazyload.js" defer></script>
+  
 </body>
 
 </html>

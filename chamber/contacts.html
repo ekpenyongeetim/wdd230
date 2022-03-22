@@ -77,7 +77,7 @@
     <main id="contact-main">
       <div class="contact-main-div">
         <div class="left-div">
-          <h2>Contact the Chamber</h2>
+          <h3>Contact the Chamber</h3>
           <p>Contact us by filling the form. We'll get back to you shortly.</p>
         </div>
 
@@ -116,42 +116,44 @@
               ></textarea></label
             ><br />
           </fieldset>
-
-          <label class="sendBtn"
-            ><input class="send" name="button" type="button" value="Send"
-          /></label>
-
-          <input type="hidden" id="postId" name="postId" value="datetime" />
+          
+          <div class="summit-btn">
+            <label
+              ><input type="hidden" id="hiddendate" name="hiddendate" value=""
+            /></label>
+            <input type="submit" class="submitBtn" value="Join" />
+          </div>
         </form>
       </div>
     </main>
 
     <footer>
       <figure class="footer">
-        <img
-          src="images/logo0.png"
-          alt="logo"
-          srcset="images/logo0.png 1x, images/logo1.png 2x, images/logo.png 3x"
-        />
-
+        <img src="images/logo0.png" alt="logo" srcset="
+                  images/logo0.png 1x,
+                  images/logo1.png 2x,
+                  images/logo.png  3x
+                " />
+  
         <article class="footerheading">
           <h3>Southern Chamber of Commerce</h3>
           <p>111 Murtala Mohammed Road, Southern Nigeria.</p>
         </article>
-        <article class="footerlctn">
+        <div class="footerlctn">
           <p>
             info@southernchamberoc.com.ng<br />
             +(234) 80679-7187<br /><span>&#9906;</span>Location Map
           </p>
-        </article>
+        </div>
       </figure>
-      <section>
+  
+      <div class="footer-section">
         <div>
           &copy;<span id="year">year</span> chamber | Ekpenyong E. Etim | WDD
           230 Project |
         </div>
         <div class="date"><span id="lastModified"></span></div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
