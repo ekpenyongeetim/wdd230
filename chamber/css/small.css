@@ -79,7 +79,7 @@ h1 {
 
 nav button {
     margin: .2rem 2vw;
-    align-items: right;
+    align-items: flex-end;
     background: transparent;
     border: 3px solid rgba(255, 255, 255, 0.3);
     font-size: 2rem;
@@ -168,7 +168,7 @@ img {
 #discover-main .discover-main-div p {
     padding: .5rem;
     text-align: left;
-    font-size: .9;
+    font-size: .9rem;
     color: #555;
 }
 
@@ -307,7 +307,7 @@ main button:hover, .join h2:hover, form input.submitBtn:hover {
 
 .weather img {
     width: 50%;
-    margin: 2;
+    margin: 2%;
 }
 
 .event {
@@ -412,7 +412,7 @@ div.footer-section {
 
 form fieldset {
     margin: 2rem 2%;
-    border: 2px initial #071B6D;
+    border: 2px solid #071B6D;
     border-radius: 8px;
     padding: .5rem 2%;
     font-family: 'Montserrat', sans-serif;
@@ -587,7 +587,7 @@ h3 {
 }
 .view-btn button {
     padding: 0.2rem 0.4rem 0.2rem 0.4rem;
-    background-color: none;
+    background-color: white;
     border-radius: .2rem;
     margin: 1em;
     border: solid 2px #071B6D;
