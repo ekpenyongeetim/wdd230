@@ -196,13 +196,14 @@ main h3 {
 #index-main div, div.card, div.intro {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    border-radius: 7px;
     font-size: 0.8rem;
     margin: 2%;
 }
 
 .hero img {
     width: 100%;
+    overflow: hidden;
 }
 
 .hero {
@@ -230,7 +231,7 @@ div.hero .subhero {
 
 div.hero .subhero p {
     margin-left: 5%;
-    width: 15rem;
+    width: 55vw;
 }
 
 button {
@@ -272,7 +273,8 @@ main button:hover, .join h2:hover, form input.submitBtn:hover {
 }
 
 .spotl1 img,
-.spotl2 img {
+.spotl2 img,
+.spotl3 img {
     width: 100%;
     border-radius: 0 0 0 0;
 }
