@@ -37,7 +37,7 @@ let lastvisit = today - lastDay;
 
 
 if (lastVisit == undefined){
-    message.textContent = "Welcome to the the Lakeland chamber discovery, Hope you enjoy!";
+    message.innerHTML= "This is your first time here. Welcome to Southern Chamber of Commerce.";
 
 } else {
     message.textContent = `${lastvisit} day(s) since last visit.`;
