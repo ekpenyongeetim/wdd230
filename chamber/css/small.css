@@ -226,21 +226,22 @@ div.hero .subhero {
     left: 0;
     right: 0;
     padding: .5rem .2rem .5rem .2rem;
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(255,255,255,.7);
 }
 
 div.hero .subhero p {
     margin-left: 5%;
     width: 55vw;
+    font-weight: bold;
 }
 
 button {
     cursor: pointer;
 }
-.hero button {
+.hero button.join-btn {
     position: absolute;
     bottom: .2rem;
-    right: 6vw;
+    right: 2.5vw;
     transition: all .5s ease;
     color: #fff;
     font-size: 1rem;
