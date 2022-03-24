@@ -352,12 +352,13 @@ main p {
 }
 
 footer img {
-    width: 30vw;
+    width: 100%;
 }
 
-footer section {
+footer figure {
     border-top: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 1rem;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 footer {
@@ -375,13 +376,17 @@ footer p {
 footer figure {
     margin: 0;
 }
-
+.footerheading p {
+    font-size: smaller;
+}
 footer .date {
     color: #62B9F9;
     font-size: smaller;
 }
-
-footer p, footer h3 {
+footer h4 {
+    margin: 0;
+}
+footer p {
     margin: 5%;
 }
 div.footer-section {
