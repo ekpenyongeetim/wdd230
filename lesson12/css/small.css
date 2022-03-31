@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', 'Merriweather', Helvetica, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;    
+}
+
+header {
+    display: block;
+    max-width: 100%;
+    color: #FDD85B;
+    padding: .2rem;
+    text-align: center;
+    
+}
+
+h1 {
+    font-family: merriweather;
+    font-size: .9rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #EC744A;
+    border: 1px solid #CCC9E7;
+    color: white;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 0px;
+
+}
+
+nav ul li a:active {
+    background-color: #CCC9E7;
+    text-decoration: underline;
+}
+li a:hover{
+    background-color: #FDD85B;
+}
+
+header img {
+    width: 7rem;
+    margin-left: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.socials {
+    padding: 3rem;
+}
+
+.button {
+    background-color: #EC744A;
+    border: none;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: .3rem;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: .8rem;
+  }
+
+.button:hover {
+    background-color: #E4C1F9;
+    color: white;
+  }
+
+main{
+    text-align: left;
+}
+
+main p {
+    text-align: left;
+    padding: 0 1rem 0 1rem;
+    margin-top: -1rem;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-gap: 3px;
+    padding: 10px;
+    font-weight: bold;
+  }
+.color {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+.color-palete1 {
+    background-color: #EC744A;
+}
+.color-palete2 {
+    background-color: #E4C1F9;
+}
+.color-palete3 {
+    background-color: #FDD85B;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #E4C1F9;
+    padding: 2.5rem;
+    border-radius: 0px  0px 12px 12px;
+}
+
+footer div {
+    font-size: 1.2rem;
+    padding: .3rem;
+}
+
+.date {
+    font-size: .8rem;
+    color: #E4C1F9;
+}
+

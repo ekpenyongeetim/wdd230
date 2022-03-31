@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*......header......*/
+div.top-header {
+	background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+
+div.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+
+div.socials {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+}
+.search-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.socials svg, .socials img {
+	width: 25px;
+	height: auto;
+}
+.logo img {
+	width: 100px;
+	height: auto;
+}
+
+.search-logo input {
+    border: none;
+    margin: 2px 7px;
+}
+.search-logo {
+    border: 1px solid #555;
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*.....main.....*/
+.cover-photo {
+    background-image: url("../../templeinns/images/temple-cover.webp");
+    min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
