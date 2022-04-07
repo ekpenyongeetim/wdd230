@@ -2,6 +2,15 @@ body {
     margin: 0;
     padding: 0;
 }
+/*......lazy load......*/
+picture img[data-src] {
+    filter: blur(0.9em);
+}
+picture img{
+    filter: none;
+    transition: filter 3s;
+}
+
 /*......header......*/
 div.top-header {
 	background-color: #fff;
@@ -81,10 +90,17 @@ li a:hover{
 
 /*.....main.....*/
 .cover-photo {
-    background-image: url("../../templeinns/images/temple-cover.webp");
+    background-image: url("../../templeinns/images/Cedar-City.webp");
     min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#index-main .call-photo img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }

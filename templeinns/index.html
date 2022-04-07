@@ -19,7 +19,7 @@
     <script src="js/windchill.js" defer></script>
     <script src="js/script.js" defer></script>
     <script src="js/currentdate.js" defer></script>
-    <script src="js/lazyload.js" defer></script>
+    <script src="js/temple.js" defer></script>
 </head>
 
 <body>
@@ -84,9 +84,53 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="index-main">
+        <div class="call-photo">
+            <picture>
+                <source media="(max-width: 450px)" srcset="images/florida-temp-small.webp" />
+                <source media="(max-width: 700px)" srcset="images/florida-temp-med.webp" />
+                <img src="images/placeholder.png" data-src="images/florida-temp.webp" alt="Florida City Temple picture">
+            </picture>
+            <div class="action-call">
+                <h1>Welcome to Temple Inns</h1>
+                <p>Here you will find special hotel accommodations near temple locations of The Church of Jesus Christ
+                    of Latter-day Saints around the world.</p>
+                <button class="book-btn" onclick="window.location.href='reservations.html';">Reserve Now</button>
+            </div>
+        </div>
+
+        <div class="temples-info">
+            <h2>Choose from our list of Temples</h2>
+
+            <div class="cards">
+                <picture>
+                    <source media="(max-width: 450px)" srcset="images/albuquerque-temp-small.webp" />
+                    <source media="(max-width: 700px)" srcset="images/albuquerque-temp-med.webp" />
+                    <img src="images/placeholder.png" data-src="images/albuquerque-temp-med.webp"
+                        alt="albuquerque Temple picture">
+                </picture>
+                <section>
+                    <h3>Albuquerque New Mexico Temple</h3>
+                </section>
+            </div>
+
+            <div class="cards">
+                <picture>
+                    <source media="(max-width: 450px)" srcset="images/apia-samoa-temp-small.webp" />
+                    <source media="(max-width: 700px)" srcset="images/apia-samoa-temp-med.webp" />
+                    <img src="images/placeholder.png" data-src="images/apia-samoa-temp.webp"
+                        alt="albuquerque Temple picture">
+                </picture>
+                <section>
+                    <h3>Apia Samoa Temple</h3>
+                </section>
+            </div>
+        </div>
         <div class="cover-photo"></div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

@@ -1,3 +1,12 @@
 @media only screen and (min-width: 60em) {
+    nav ul{
+        max-width: 500px;
+        float: right;
+        margin: 0;
+    }
+    nav {
+        background-color: #EC744A;
+        width: 100%;
+    }
     
 }
