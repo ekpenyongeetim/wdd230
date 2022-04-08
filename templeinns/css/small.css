@@ -133,6 +133,11 @@ p {
     padding: .5rem;
     font-family: 'Open Sans', sans-serif;
 }
+span.call-text {
+    color: #D86411;
+    font-weight: 800;
+    
+}
 div.action-call button {
     cursor: pointer;
     padding: .3rem .7rem;
